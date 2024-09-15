@@ -23,13 +23,6 @@ console_handler.setLevel(logging.INFO)
 file_handler = logging.FileHandler('strategizer.log', mode='w')
 file_handler.setLevel(logging.INFO)
 
-# Formatter for logging
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s
-
-.initial_capital, risk_manager=self.risk_manager, **kwargs)
-logger.info(f"Backtest completed for strategy: {strategy_name}")
-return results
-
 
 def configure_risk_management(self, stop_loss_type=None, stop_loss_amt=None, take_profit_prop=None):
     """
